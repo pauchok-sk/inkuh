@@ -1,0 +1,9 @@
+[data-tab] {
+  display: none;
+  opacity: 0;
+
+  transition: opacity .5s ease;
+  &._active {
+    display: block;
+  }
+}

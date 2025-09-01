@@ -1,0 +1,191 @@
+.s-kitchens {
+  overflow: hidden;
+  &__title {
+    max-width: 855px;
+    text-align: center;
+    margin: 0px auto 20px auto;
+  }
+  &__head-content {
+    max-width: 810px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px auto 45px auto;
+    @include tablet {
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    row-gap: 15px;
+
+    @include laptop-middle {
+      display: flex;
+      overflow-x: auto;
+      margin: 0 -15px;
+      padding: 0 15px;
+    }
+    @include tablet {
+      gap: 20px;
+    }
+  }
+  &__nav-btn {
+    width: 100%;
+    @include laptop-middle {
+      width: fit-content;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 40px;
+    margin-top: 45px;
+    @include tablet {
+      margin-top: 25px;
+      gap: 15px;
+      row-gap: 20px;
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+    }
+
+    [data-more-item] {
+      overflow: hidden;
+      &:nth-child(-n + 4) {
+        display: block;
+      }
+    }
+  }
+  &__item {
+    width: 100%;
+  }
+  &__item-slider {
+    width: 100%;
+    aspect-ratio: 1/0.65;
+  }
+  &__item-slide {
+    border-radius: 5px;
+    overflow: hidden;
+
+    transition: opacity 0.3s ease;
+    @include hover {
+      opacity: 0.8;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__item-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #1e1e1e;
+    text-align: center;
+    margin: 30px 0px 45px 0px;
+    @include laptop-middle {
+      font-size: 28px;
+    }
+    @include laptop-min {
+      font-size: 24px;
+      margin: 20px 0px 25px 0px;
+    }
+    @include tablet {
+      font-size: 20px;
+      margin: 15px 0px;
+    }
+  }
+  &__item-spec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    row-gap: 15px;
+    @include laptop-min {
+      gap: 15px;
+    }
+    @include tablet {
+      gap: 10px;
+    }
+  }
+  &__item-spec-block {
+  }
+  &__item-spec-title {
+    font-size: 22px;
+    line-height: 147%;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+    @include laptop-middle {
+      font-size: 18px;
+    }
+    @include laptop-min {
+      font-size: 16px;
+    }
+    @include tablet {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  }
+  &__item-spec-size {
+    font-size: 30px;
+    @include laptop-middle {
+      font-size: 24px;
+    }
+    @include laptop-min {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+  &__item-spec-content {
+    font-size: 16px;
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+  &__item-btn {
+    width: 100%;
+    margin-top: 30px;
+    @include tablet {
+      margin-top: 20px;
+    }
+  }
+  &__more-btn {
+    @include flex-center;
+    cursor: pointer;
+    gap: 10px;
+    width: 100%;
+    margin-top: 45px;
+    padding: 28px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+
+    text-align: center;
+    font-size: 16px;
+
+    transition: background-color .3s ease;
+
+    @include hover {
+      background-color: var(--primary);
+    }
+
+    @include tablet {
+      margin-top: 25px;
+      padding: 20px 10px;
+    }
+
+    svg {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+    }
+  }
+}

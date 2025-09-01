@@ -1,0 +1,24 @@
+.s-get-price {
+  &__title {
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+  }
+  &__head-content {
+    text-align: center;
+    font-size: 32px;
+    text-align: center;
+    color: #181b11;
+    margin: 0px 0px 45px 0px;
+    @include laptop-middle {
+      font-size: 28px;
+    }
+    @include laptop-min {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    @include tablet {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+  }
+}

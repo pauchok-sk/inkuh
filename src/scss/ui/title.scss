@@ -1,0 +1,20 @@
+.s-title {
+  font-size: 40px;
+  letter-spacing: 0.06em;
+  @include laptop-middle {
+    font-size: 36px;
+  }
+  @include laptop-min {
+    font-size: 32px;
+  }
+  @include tablet {
+    font-size: 28px;
+  }
+  @include tablet-min {
+    font-size: 24px;
+  }
+
+  span {
+    font-weight: 400;
+  }
+}

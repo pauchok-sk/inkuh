@@ -1,0 +1,270 @@
+.header {
+  padding: 30px 0px;
+  background-color: white;
+  border-bottom: 1px solid #ebebeb;
+  @include laptop-min {
+    padding: 15px 0px;
+  }
+  @include tablet-min {
+    padding: 10px 0px;
+  }
+  &__wrapper {
+    @include flex-between;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 14px;
+    color: #525252;
+
+    img {
+      display: block;
+      width: 190px;
+
+      @include laptop-middle {
+        width: 150px;
+      }
+      @include laptop-min {
+        width: 115px;
+      }
+    }
+    span {
+      max-width: 180px;
+      @include laptop-min {
+        display: none;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @include laptop-middle {
+      gap: 30px;
+    }
+    @include laptop-min {
+      gap: 20px;
+    }
+  }
+  &__address {
+    position: relative;
+    display: flex;
+    align-items: start;
+    gap: 15px;
+    font-family: "Montserrat", sans-serif;
+
+    @include laptop-min {
+      display: none;
+    }
+  }
+  &__address-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--primary-dark);
+    flex-shrink: 0;
+  }
+  &__address-btn {
+    display: flex;
+    align-items: start;
+    cursor: pointer;
+    gap: 5px;
+
+    font-size: 16px;
+    line-height: 125%;
+
+    transition: color 0.3s ease;
+
+    @include hover {
+      color: var(--primary);
+    }
+
+    &._active {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    span {
+      flex: 0 1 162px;
+      margin-top: -3px;
+    }
+
+    svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+
+      transition: transform 0.3s ease;
+    }
+  }
+  &__address-dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    top: 100%;
+    box-shadow: 0 4px 4px 2px rgba(0, 0, 0, 0.25);
+
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+      opacity 0.4s ease,
+      visibility 0.4s ease,
+      transform 0.4s ease;
+
+    &._open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__address-item {
+  }
+  &__tel-wrapper {
+  }
+  &__tel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    transition: color 0.3s ease;
+
+    @include hover {
+      color: var(--primary-dark);
+    }
+    @include laptop-middle {
+      font-size: 18px;
+    }
+    @include laptop-min {
+      @include flex-center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: var(--primary);
+
+      transition: background-color 0.3s ease;
+      @include hover {
+        background-color: var(--primary-dark);
+      }
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      color: var(--primary-dark);
+      @include laptop-min {
+        color: black;
+      }
+    }
+    span {
+      @include laptop-min {
+        display: none;
+      }
+    }
+  }
+  &__order-call {
+    display: block;
+    margin-left: auto;
+    width: fit-content;
+    margin-top: 5px;
+    font-size: 14px;
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--primary);
+
+    transition: color 0.3s ease;
+
+    @include hover {
+      color: var(--primary);
+    }
+    @include laptop-min {
+      display: none;
+    }
+  }
+  &__social {
+    display: flex;
+    gap: 12px;
+    @include laptop-min {
+      display: none;
+    }
+  }
+  &__social-btn {
+    display: block;
+    width: 40px;
+
+    transition: opacity 0.3s ease;
+
+    @include hover {
+      opacity: 0.7;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__burger-btn {
+    width: 32px;
+    height: 32px;
+
+    transition: color 0.3s ease;
+    @include hover {
+      color: var(--primary);
+    }
+
+    @media (min-width: 992px) {
+      display: none;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.header-nav {
+  background-color: white;
+  padding: 30px 0px;
+  @include laptop-middle {
+    padding: 20px 0px;
+  }
+  @include laptop-min {
+    display: none;
+  }
+  &__wrapper {
+  }
+  &__list {
+    @include flex-between;
+    gap: 15px;
+
+    a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 129%;
+      text-transform: uppercase;
+
+      transition: color .3s ease;
+
+      @include hover {
+        color: var(--primary);
+      }
+      @include laptop-middle {
+        font-size: 14px;
+      }
+    }
+  }
+}

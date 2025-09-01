@@ -1,0 +1,46 @@
+.input {
+  @include flex-center;
+  width: 100%;
+  padding: 22px 20px;
+  background-color: white;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #c2c2c2;
+
+  font-size: 16px;
+  line-height: 99%;
+  letter-spacing: 0.03em;
+
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: var(--primary);
+  }
+
+  @include tablet {
+    padding: 16px 14px;
+  }
+}
+
+.form-policy {
+  font-size: 16px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 30px 0px 0px 0px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+    transition: color .3s ease;
+
+    @include hover {
+      color: var(--primary);
+    }
+  }
+}

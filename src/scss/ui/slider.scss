@@ -1,0 +1,67 @@
+.slider-btn {
+  @include flex-center;
+  position: absolute;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: rgba(232, 232, 232, 0.75);
+  z-index: 10;
+
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease;
+
+  @include tablet {
+    width: 40px;
+    height: 40px;
+  }
+
+  &._prev {
+    left: 10px;
+  }
+  &._next {
+    right: 10px;
+  }
+  @include hover {
+    background-color: rgba(232, 232, 232, 1);
+  }
+
+  &.swiper-button-disabled {
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    @include tablet {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.slider-scrollbar {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-top: 25px;
+
+  .swiper-scrollbar-drag {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      height: 5px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
