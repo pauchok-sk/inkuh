@@ -1,6 +1,8 @@
 import "../scss/style.scss";
 import burger from "./files/burger.js";
+import connectFile from "./files/connectFile.js";
 import headerAddress from "./files/headerAddress.js";
+import inputFile from "./files/inputFile.js";
 import inputmask from "./files/inputmask.js";
 import more from "./files/more.js";
 import select from "./files/select.js";
@@ -16,6 +18,8 @@ slides();
 tabs();
 more();
 select();
+inputFile();
+connectFile();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: false,

@@ -1,5 +1,4 @@
 .input {
-  @include flex-center;
   width: 100%;
   padding: 22px 20px;
   background-color: white;
@@ -18,13 +17,16 @@
   }
 
   @include tablet {
-    padding: 16px 14px;
+    padding: 14px 12px;
   }
 
   &._outline-white {
     color: white;
     background-color: transparent;
   }
+}
+textarea.input {
+  resize: none;
 }
 
 .form-policy {
@@ -46,10 +48,56 @@
     text-decoration: underline;
     text-underline-offset: 3px;
 
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 
     @include hover {
       color: var(--primary);
     }
+  }
+}
+
+.input-file {
+  display: none;
+}
+.label-file {
+  @include flex-center;
+  cursor: pointer;
+  width: 100%;
+  padding: 22px 20px;
+  background-color: white;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #c2c2c2;
+  gap: 10px;
+
+  font-size: 16px;
+  line-height: 99%;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.5);
+
+  transition: border-color 0.3s ease;
+
+  @include tablet {
+    padding: 16px 14px;
+  }
+  @include tablet-min {
+    font-size: 14px;
+  }
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    background: url('@img/paper-clip.svg') center / 100% auto no-repeat;
+    @include tablet-min {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &._outline-white {
+    color: white;
+    background-color: transparent;
   }
 }
