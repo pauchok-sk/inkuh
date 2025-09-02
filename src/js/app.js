@@ -3,6 +3,7 @@ import burger from "./files/burger.js";
 import headerAddress from "./files/headerAddress.js";
 import inputmask from "./files/inputmask.js";
 import more from "./files/more.js";
+import select from "./files/select.js";
 import slides from "./files/slides.js";
 import spoller from "./files/spoller.js";
 import tabs from "./files/tabs.js";
@@ -14,6 +15,7 @@ burger();
 slides();
 tabs();
 more();
+select();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: false,

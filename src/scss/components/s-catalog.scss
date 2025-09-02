@@ -1,12 +1,78 @@
 .s-catalog {
+  padding: 60px 0px;
+  background-color: var(--dark);
+  color: white;
+  @include tablet {
+    padding: 50px 0px;
+  }
+  &__inside {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 50px 0px;
+    @include tablet {
+      padding: 40px 0px;
+    }
+  }
+  &__title {
+    max-width: 950px;
+    margin: 0px 0px 40px 0px;
+  }
   &__wrapper {
+    @include flex-between;
+    gap: 30px;
+    @include laptop-min {
+      flex-direction: column-reverse;
+    }
   }
   &__form-wrapper {
+    flex: 0 1 440px;
+    @include laptop-middle {
+      flex: none;
+      width: 440px;
+      max-width: 100%;
+    }
+    @include tablet-min {
+      width: 100%;
+    }
   }
   &__form-content {
+    font-size: 16px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    margin: 0px 0px 20px 0px;
+    @include tablet-min {
+      font-size: 14px;
+    }
   }
   &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 400px;
+    max-width: 100%;
+    @include tablet {
+      gap: 20px;
+    }
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+  &__form-btn {
+    width: 100%;
   }
   &__img {
+    width: 630px;
+    display: block;
+    @include laptop-middle {
+      width: 45%;
+    }
+    @include laptop-min {
+      width: 400px;
+    }
+  }
+  &__form-policy {
+    max-width: 865px;
+    margin-top: 20px;
+    font-weight: 300;
   }
 }

@@ -1,10 +1,95 @@
 .select {
+  position: relative;
+
+  &._open {
+    .select-btn {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    .select-body {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &._outline-white {
+    .select-btn {
+      background-color: transparent;
+      color: white;
+    }
+  }
+}
+.select-input {
+  display: none;
 }
 .select-btn {
+  @include flex-between;
+  cursor: pointer;
+  gap: 15px;
+  width: 100%;
+  padding: 22px 20px;
+  background-color: white;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #c2c2c2;
+
+  color: black;
+  font-size: 16px;
+  line-height: 99%;
+  letter-spacing: 0.03em;
+
+  transition: background-color 0.3s ease;
+
+  @include hover {
+    background-color: #ebebeb;
+  }
+  @include tablet {
+    padding: 16px 14px;
+  }
+
+  svg {
+    width: 14px;
+    height: 14px;
+
+    transition: transform 0.3s ease;
+  }
 }
 .select-title {
 }
 .select-body {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #c2c2c2;
+
+  color: black;
+  font-size: 16px;
+  line-height: 99%;
+  letter-spacing: 0.03em;
+
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease,
+    visibility 0.4s ease;
 }
 .select-item {
+  cursor: pointer;
+  padding: 15px 10px;
+
+  transition: background-color 0.3s ease;
+
+  @include hover {
+    background-color: #ebebeb;
+  }
 }

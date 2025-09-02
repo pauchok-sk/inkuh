@@ -1,0 +1,105 @@
+.s-details {
+  position: relative;
+  background-color: var(--dark);
+  color: white;
+  z-index: 1;
+  &__bg {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: auto;
+    z-index: -1;
+  }
+  &__bg-inside {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background: linear-gradient(180deg, #15151d 0%, rgba(21, 21, 29, 0) 26.47%, rgba(21, 21, 29, 0) 64.91%, #15151d 100%);
+      z-index: 1;
+    }
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+      @include tablet {
+        filter: brightness(60%);
+      }
+    }
+  }
+  &__title {
+    margin: 0px 0px 15px 0px;
+  }
+  &__content {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    margin: 0px 0px 35px 0px;
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    max-width: 100%;
+    gap: 40px;
+    @include laptop-min {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+      width: 420px;
+      margin: 0 auto;
+    }
+  }
+  &__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 30px;
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    @include tablet {
+      padding: 20px;
+      min-height: 200px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background: linear-gradient(0deg, rgba(21, 21, 29, 0.2) 0%, rgba(21, 21, 29, 0.8) 100%);
+      z-index: -1;
+    }
+  }
+  &__item-num {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 90%;
+    margin-bottom: 25px;
+    @include tablet {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+  }
+  &__item-content {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 155%;
+    padding-top: 25px;
+    border-top: 1px solid rgba(247, 247, 247, 0.5);
+    @include tablet {
+      padding-top: 18px;
+      font-size: 16px;
+    }
+  }
+}
