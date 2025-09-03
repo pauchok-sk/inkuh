@@ -1,0 +1,129 @@
+.s-reviews {
+  @include tablet {
+    overflow: hidden;
+  }
+  &__title {
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+  }
+  &__descr {
+    text-align: center;
+    font-size: 32px;
+    text-align: center;
+    color: #181b11;
+    margin: 0px 0px 45px 0px;
+
+    @include laptop-min {
+      font-size: 24px;
+    }
+    @include tablet {
+      margin-bottom: 25px;
+      font-size: 20px;
+    }
+    @include tablet-min {
+      font-size: 18px;
+    }
+  }
+  &__nav {
+    @include flex-center;
+    gap: 100px;
+    row-gap: 20px;
+    margin-bottom: 50px;
+    @include laptop-min {
+      margin-bottom: 30px;
+    }
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      row-gap: 20px;
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__nav-btn {
+    width: 260px;
+    max-width: 100%;
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &__slider-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @include laptop-middle {
+      gap: 25px;
+    }
+    @include laptop-min {
+      display: block;
+    }
+
+    .slider-btn {
+      position: static;
+      transform: translate(0, 0);
+      flex-shrink: 0;
+      @include laptop-min {
+        display: none;
+      }
+    }
+  }
+  &__slider {
+    @include tablet {
+      overflow: visible !important;
+    }
+  }
+  &__slide {
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex !important;
+    align-items: center;
+    gap: 25px;
+    aspect-ratio: 1/0.6;
+    background: #222327;
+    @include laptop-min {
+      gap: 15px;
+    }
+    @include tablet {
+      display: block !important;
+      width: 330px !important;
+      max-width: 100%;
+    }
+  }
+  &__slide-img {
+    height: 100%;
+    width: 34%;
+    display: block;
+    object-fit: cover;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__slide-content {
+    display: block;
+    outline: none;
+    transition: opacity 0.3s ease;
+    @include hover {
+      opacity: 0.8;
+    }
+    @include tablet {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__slide-img-content {
+    display: block;
+    width: auto;
+    max-height: 100%;
+    object-fit: contain;
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &__slider-scrollbar {
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+}

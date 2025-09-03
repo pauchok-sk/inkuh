@@ -1,0 +1,93 @@
+.s-report {
+  padding: 60px 0px;
+  background: #15151d;
+  color: white;
+  @include tablet {
+    padding: 50px 0px;
+    overflow: hidden;
+  }
+  &__body {
+    padding: 50px 0px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    @include tablet {
+      padding: 40px 0px;
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    @include laptop-min {
+      margin-bottom: 30px;
+    }
+    @include tablet-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__title {
+    max-width: 915px;
+    margin: 0;
+    @include tablet-min {
+      max-width: none;
+      width: 100%;
+    }
+  }
+  &__slider-nav {
+    display: flex;
+    gap: 15px;
+    @include tablet-min {
+      margin-left: auto;
+    }
+
+    .slider-btn {
+      position: static;
+      transform: translate(0, 0);
+    }
+  }
+  &__slider {
+    @include tablet {
+      overflow: visible !important;
+    }
+  }
+  &__slide {
+    @include tablet {
+      width: 320px !important;
+    }
+  }
+  &__slide-gallery {
+    position: relative;
+    @include flex-center;
+    aspect-ratio: 1/0.72;
+    outline: none
+  }
+  &__slide-play {
+    @include flex-center;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+    @include hover {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__slide-date {
+    font-size: 14px;
+    line-height: 143%;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px;
+  }
+}

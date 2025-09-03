@@ -35,6 +35,14 @@
     pointer-events: none;
   }
 
+  &._primary {
+    background-color: var(--primary);
+    color: black;
+    @include hover {
+      background-color: var(--primary-dark);
+    }
+  }
+
   svg {
     width: 24px;
     height: 24px;
