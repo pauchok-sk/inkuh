@@ -1,11 +1,14 @@
 .header {
-  position: sticky;
-  top: 0;
   padding: 30px 0px;
   background-color: white;
   border-bottom: 1px solid #ebebeb;
-  z-index: 90;
-  transition: transform .4s ease;
+  transition: transform 0.4s ease;
+
+  @include laptop-min {
+    position: sticky;
+    top: 0;
+    z-index: 90;
+  }
 
   &._scroll {
     transform: translateY(-100%);
@@ -246,8 +249,16 @@
 }
 
 .header-nav {
+  position: sticky;
+  top: 0;
   background-color: white;
   padding: 30px 0px;
+  transition: transform 0.4s ease;
+  z-index: 90;
+
+  &._scroll {
+    transform: translateY(-100%);
+  }
   @include laptop-middle {
     padding: 20px 0px;
   }
@@ -266,7 +277,7 @@
       line-height: 129%;
       text-transform: uppercase;
 
-      transition: color .3s ease;
+      transition: color 0.3s ease;
 
       @include hover {
         color: var(--primary);

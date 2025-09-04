@@ -1,4 +1,5 @@
 import "../scss/style.scss";
+import anchors from "./files/anchors.js";
 import burger from "./files/burger.js";
 import connectFile from "./files/connectFile.js";
 import headerAddress from "./files/headerAddress.js";
@@ -24,8 +25,9 @@ select();
 inputFile();
 connectFile();
 map();
+anchors();
 
 Fancybox.bind("[data-fancybox]", {
   closeButton: false,
 });
-// Fancybox.show([{ type: "inline", src: "#modal-connect" }]);
+// Fancybox.show([{ type: "inline", src: "#modal-catalog", closeButton: false }]);

@@ -30,3 +30,14 @@
     }
   }
 }
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.min-h-100vh {
+  min-height: 100vh;
+}
+.flex-1 {
+  flex: 1;
+}

@@ -1,7 +1,7 @@
 <div class="modal" id="modal-connect">
   <div class="modal__close" data-fancybox-close>
     <svg>
-      <use xlink:href='img/icons/icons.svg#icon-close'></use>
+      <use xlink:href="img/icons/icons.svg#icon-close"></use>
     </svg>
   </div>
   <h3 class="s-title modal__title">Оставьте заявку</h3>
@@ -23,10 +23,61 @@
     <p class="form-policy">
       Нажимая кнопку «Оставить заявку», я принимаю условия
       <a href="#" target="_blank">Пользовательского соглашения</a>
-      и даю свое согласие на
-      <a href="#" target="_blank">обработку моих персональных данных</a>
-      , в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О
-      персональных данных»
+      и даю свое согласие на обработку моих персональных данных , в соответствии
+      с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»
     </p>
   </div>
+</div>
+
+<div class="modal-catalog" id="modal-catalog">
+  <div data-fancybox-close class="modal-catalog__close">
+    <svg>
+      <use xlink:href="img/icons/icons.svg#icon-close"></use>
+    </svg>
+  </div>
+  <h3 class="s-title modal-catalog__title">
+    Получите каталог кухонь 2025 года
+  </h3>
+  <p class="modal-catalog__content">
+    Выберите удобный способ, чтобы получить каталог:
+  </p>
+  <form action="#" class="modal-catalog__form">
+    <div class="input-control">
+      <div class="select _outline-white">
+        <input type="text" class="select-input" />
+        <div class="select-btn">
+          <span class="select-title">WhatsApp</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-down"></use>
+          </svg>
+        </div>
+        <div class="select-body">
+          <div class="select-item">Telegram</div>
+          <div class="select-item">Viber</div>
+        </div>
+      </div>
+    </div>
+    <div class="input-control">
+      <input
+        type="text"
+        placeholder="Как к вам обращаться?"
+        class="input _outline-white"
+      />
+    </div>
+    <div class="input-control">
+      <input
+        type="tel"
+        placeholder="+7 (999) 999-99-99"
+        class="input _outline-white"
+      />
+    </div>
+    <button class="btn-s modal-catalog__form-btn">Получить каталог</button>
+  </form>
+  <p class="form-policy _white modal-catalog__form-policy">
+    Нажимая кнопку «Оставить заявку», я принимаю условия
+    <a href="#" target="_blank">Пользовательского соглашения</a>
+    и даю свое согласие на обработку моих персональных данных , в соответствии с
+    Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»
+  </p>
+  <img src="@img/modal-catalog-image.png" alt="image" class="modal-catalog__img">
 </div>

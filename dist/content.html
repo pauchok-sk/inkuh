@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Ин-Кух</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250904232548" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250904232548">
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250904232548">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250904232548" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body flex-col min-h-100vh">
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="/" class="header__logo">
+					<img src="img/logo.png" alt="logo" />
+					<span>Производитель кухонных гарнитуров</span>
+				</a>
+				<div class="header__contacts">
+					<div class="header__address">
+						<svg class="header__address-icon">
+							<use xlink:href="img/icons/icons.svg#icon-location"></use>
+						</svg>
+						<div class="header__address-btn">
+							<span>г. Казань, Проспект Ибрагимова, 56А</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-down"></use>
+							</svg>
+						</div>
+						<div class="header__address-dropdown">
+							<div class="header__address-item">
+								г. Казань, Проспект Ибрагимова, 56А
+							</div>
+							<div class="header__address-item">
+								г. Казань, Проспект Ибрагимова, 56А
+							</div>
+						</div>
+					</div>
+					<div class="header__tel-wrapper">
+						<a href="tel:+79177090077" class="header__tel">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+							</svg>
+							<span>+7 (917) 709-00-77</span>
+						</a>
+						<a href="#modal-connect" data-fancybox class="header__order-call">
+							Заказать обратный звонок
+						</a>
+					</div>
+					<div class="header__social">
+						<a href="#" target="_blank" class="header__social-btn">
+							<img src="img/tg.svg" alt="icon" />
+						</a>
+						<a href="#" target="_blank" class="header__social-btn">
+							<img src="img/wh.svg" alt="icon" />
+						</a>
+					</div>
+					<div class="header__burger-btn" id="burger-open">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-burger"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header-nav">
+		<div class="container">
+			<nav class="header-nav__wrapper">
+				<ul class="list header-nav__list">
+					<li><a href="#s-kitchens" data-anchor>НАШИ КУХНИ</a></li>
+					<li><a href="#s-catalog" data-anchor>СКАЧАТЬ КАТАЛОГ</a></li>
+					<li><a href="#s-offer" data-anchor>Акции</a></li>
+					<li><a href="#s-steps" data-anchor>этапы работы</a></li>
+					<li><a href="#s-reviews" data-anchor>отзывы</a></li>
+					<li><a href="#s-about" data-anchor>О нас</a></li>
+					<li><a href="#s-contacts" data-anchor>Контакты</a></li>
+					<li><a href="#s-get-price" data-anchor>Расчитать стоимость</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="burger-overlay" id="burger-overlay"></div>
+	<div class="burger" id="burger">
+		<div class="burger__head">
+			<a href="/" class="burger__logo">
+				<img src="img/logo.png" alt="logo" />
+			</a>
+			<div class="burger__close" id="burger-close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+		</div>
+		<ul class="list burger__list">
+			<li><a href="#s-kitchens" data-anchor>НАШИ КУХНИ</a></li>
+			<li><a href="#s-catalog" data-anchor>СКАЧАТЬ КАТАЛОГ</a></li>
+			<li><a href="#s-offer" data-anchor>Акции</a></li>
+			<li><a href="#s-steps" data-anchor>этапы работы</a></li>
+			<li><a href="#s-reviews" data-anchor>отзывы</a></li>
+			<li><a href="#s-about" data-anchor>О нас</a></li>
+			<li><a href="#s-contacts" data-anchor>Контакты</a></li>
+			<li><a href="#s-get-price" data-anchor>Расчитать стоимость</a></li>
+		</ul>
+		<div class="burger__contacts">
+			<div data-spollers class="burger__address">
+				<div data-spoller class="burger__address-btn">
+					<svg class="burger__address-icon">
+						<use xlink:href="img/icons/icons.svg#icon-location"></use>
+					</svg>
+					<span>г. Казань, Проспект Ибрагимова, 56А</span>
+					<svg class="burger__address-arrow">
+						<use xlink:href="img/icons/icons.svg#icon-down"></use>
+					</svg>
+				</div>
+				<div>
+					<div class="burger__address-spoller">
+						<div class="burger__address-item">
+							г. Казань, Проспект Ибрагимова, 56А
+						</div>
+						<div class="burger__address-item">
+							г. Казань, Проспект Ибрагимова, 56А
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="tel:+79177090077" class="burger__tel">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+				</svg>
+				<span>+7 (917) 709-00-77</span>
+			</a>
+			<a href="#modal-connect" data-fancybox class="burger__order-call">
+				Заказать обратный звонок
+			</a>
+			<div class="burger__social">
+				<a href="#" target="_blank" class="burger__social-btn">
+					<img src="img/tg.svg" alt="icon" />
+				</a>
+				<a href="#" target="_blank" class="burger__social-btn">
+					<img src="img/wh.svg" alt="icon" />
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<main class="flex-1 flex-col">
+		<section class="sect-p s-content">
+			<div class="container">
+				<h2 class="s-title s-content__title">Политика конфиденциальности</h2>
+				<div class="content">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+						deserunt obcaecati sequi, voluptas iusto quam reiciendis? Facilis
+						temporibus voluptas quaerat, nam dignissimos reiciendis
+						voluptatibus consectetur ducimus ullam debitis velit deserunt
+						quibusdam quod placeat est praesentium corporis reprehenderit
+						recusandae doloribus minima quidem aperiam unde adipisci eaque.
+						Nam natus dolores soluta quaerat iusto hic eveniet doloremque.
+						Culpa ea id, ut quidem praesentium neque corporis accusamus.
+						Incidunt ut, repellendus porro rerum dignissimos assumenda alias
+						explicabo dolorum laudantium ad dolores iure eum error qui aperiam
+						dolorem quaerat expedita libero fuga quasi. Sunt omnis laudantium
+						tempora veniam, et, placeat voluptates totam deleniti, minima
+						reprehenderit laboriosam?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+						deserunt obcaecati sequi, voluptas iusto quam reiciendis? Facilis
+						temporibus voluptas quaerat, nam dignissimos reiciendis
+						voluptatibus consectetur ducimus ullam debitis velit deserunt
+						quibusdam quod placeat est praesentium corporis reprehenderit
+						recusandae doloribus minima quidem aperiam unde adipisci eaque.
+						Nam natus dolores soluta quaerat iusto hic eveniet doloremque.
+						Culpa ea id, ut quidem praesentium neque corporis accusamus.
+						Incidunt ut, repellendus porro rerum dignissimos assumenda alias
+						explicabo dolorum laudantium ad dolores iure eum error qui aperiam
+						dolorem quaerat expedita libero fuga quasi. Sunt omnis laudantium
+						tempora veniam, et, placeat voluptates totam deleniti, minima
+						reprehenderit laboriosam?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+						deserunt obcaecati sequi, voluptas iusto quam reiciendis? Facilis
+						temporibus voluptas quaerat, nam dignissimos reiciendis
+						voluptatibus consectetur ducimus ullam debitis velit deserunt
+						quibusdam quod placeat est praesentium corporis reprehenderit
+						recusandae doloribus minima quidem aperiam unde adipisci eaque.
+						Nam natus dolores soluta quaerat iusto hic eveniet doloremque.
+						Culpa ea id, ut quidem praesentium neque corporis accusamus.
+						Incidunt ut, repellendus porro rerum dignissimos assumenda alias
+						explicabo dolorum laudantium ad dolores iure eum error qui aperiam
+						dolorem quaerat expedita libero fuga quasi. Sunt omnis laudantium
+						tempora veniam, et, placeat voluptates totam deleniti, minima
+						reprehenderit laboriosam?
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<div class="modal" id="modal-connect">
+		<div class="modal__close" data-fancybox-close>
+			<svg>
+				<use xlink:href="img/icons/icons.svg#icon-close"></use>
+			</svg>
+		</div>
+		<h3 class="s-title modal__title">Оставьте заявку</h3>
+		<p class="modal__content">
+			Мы свяжемся с вами для расчёта
+			<br />
+			стоимости кухонного гарнитура
+		</p>
+		<div class="modal__form-wrapper">
+			<form action="#" class="modal__form">
+				<div class="input-control">
+					<input type="text" placeholder="Как к вам обращаться?" class="input" />
+				</div>
+				<div class="input-control">
+					<input type="tel" placeholder="+7 (999) 999-99-99" class="input" />
+				</div>
+				<button class="btn-s modal__form-btn">Оставить заявку</button>
+			</form>
+			<p class="form-policy">
+				Нажимая кнопку «Оставить заявку», я принимаю условия
+				<a href="#" target="_blank">Пользовательского соглашения</a>
+				и даю свое согласие на обработку моих персональных данных , в соответствии
+				с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»
+			</p>
+		</div>
+	</div>
+
+	<div class="modal-catalog" id="modal-catalog">
+		<div data-fancybox-close class="modal-catalog__close">
+			<svg>
+				<use xlink:href="img/icons/icons.svg#icon-close"></use>
+			</svg>
+		</div>
+		<h3 class="s-title modal-catalog__title">
+			Получите каталог кухонь 2025 года
+		</h3>
+		<p class="modal-catalog__content">
+			Выберите удобный способ, чтобы получить каталог:
+		</p>
+		<form action="#" class="modal-catalog__form">
+			<div class="input-control">
+				<div class="select _outline-white">
+					<input type="text" class="select-input" />
+					<div class="select-btn">
+						<span class="select-title">WhatsApp</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-down"></use>
+						</svg>
+					</div>
+					<div class="select-body">
+						<div class="select-item">Telegram</div>
+						<div class="select-item">Viber</div>
+					</div>
+				</div>
+			</div>
+			<div class="input-control">
+				<input type="text" placeholder="Как к вам обращаться?" class="input _outline-white" />
+			</div>
+			<div class="input-control">
+				<input type="tel" placeholder="+7 (999) 999-99-99" class="input _outline-white" />
+			</div>
+			<button class="btn-s modal-catalog__form-btn">Получить каталог</button>
+		</form>
+		<p class="form-policy _white modal-catalog__form-policy">
+			Нажимая кнопку «Оставить заявку», я принимаю условия
+			<a href="#" target="_blank">Пользовательского соглашения</a>
+			и даю свое согласие на обработку моих персональных данных , в соответствии с
+			Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»
+		</p>
+		<img src="img/modal-catalog-image.png" alt="image" class="modal-catalog__img">
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__main">
+					<a href="#" class="footer__logo">
+						<img src="img/logo.png" alt="logo" />
+					</a>
+					<div class="footer__copyright">© 2025 INNOVA</div>
+					<p class="footer__main-content">
+						Все права защищены.
+						<br />
+						Копирование материалов с
+						<br />
+						разрешения администрации.
+					</p>
+				</div>
+				<div class="footer__nav">
+					<div class="footer__nav-item">
+						<ul class="list footer__nav-list">
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Наши кухни</a></li>
+							<li><a href="#">Этапы работы</a></li>
+							<li><a href="#">Скачать каталог</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-item">
+						<ul class="list footer__nav-list">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Расчитать стоимость</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-item">
+						<a href="tel:+79177090077" class="footer__tel">+7 (917) 709-00-77</a>
+						<div data-spollers class="footer__addresses">
+							<div data-spoller class="footer__address-btn">
+								<span>г. Казань, Проспект Ибрагимова, 56А</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-down"></use>
+								</svg>
+							</div>
+							<div>
+								<div class="footer__addresses-body">
+									<div class="footer__address-item">
+										г. Казань, Проспект Ибрагимова, 56А
+									</div>
+									<div class="footer__address-item">
+										г. Казань, Проспект Ибрагимова, 56А
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__work-time">Пн-Вс: с 9:00 до 21:00</div>
+						<a href="mailto:innova@in-kuh.ru" class="footer__mail">innova@in-kuh.ru</a>
+					</div>
+				</div>
+				<div class="footer__buttons">
+					<a href="#modal-connect" data-fancybox class="btn-s footer__nav-btn">Заказать звонок</a>
+					<div class="footer__social">
+						<a href="#" target="_blank" class="footer__social-btn">
+							<img src="img/tg.svg" alt="icon">
+						</a>
+						<a href="#" target="_blank" class="footer__social-btn">
+							<img src="img/wh.svg" alt="icon">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<ul class="list footer__bottom-list">
+					<li><a href="#" target="_blank">Политика обработки персональных данных</a></li>
+				</ul>
+				<a href="https://qorix.ru/" target="_blank" class="footer__dev">
+					<span>Разработка сайта –</span>
+					<img src="img/qorix.svg" alt="icon">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/fancybox/fancybox.min.js?_v=20250904232548"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20250904232548"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20250904232548"></script>
+
+	<script src="js/app.min.js?_v=20250904232548"></script>
+</body>
+
+</html>

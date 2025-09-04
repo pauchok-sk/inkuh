@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body flex-col min-h-100vh">
+    @@include('html/components/header.html')
+    <main class="flex-1 flex-col">
+      
+      <section class="sect-p s-error">
+        <div class="container">
+          <div class="s-error__num">404</div>
+          <p class="s-error__content content">Страницу, которую вы ищите, не существует.</p>
+          <a href="/" class="btn-s s-error__btn">На главную</a>
+        </div>
+      </section>
+
+    </main>
+    @@include('html/components/modals.html')
+    @@include('html/components/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ин-Кух</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&_v=20250904232548" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/swiper/swiper.min.css?_v=20250904232548">
+	<link rel="stylesheet" href="./files/fancybox/fancybox.min.css?_v=20250904232548">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250904232548" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper">
+				<a href="/" class="header__logo">
+					<img src="img/logo.png" alt="logo" />
+					<span>Производитель кухонных гарнитуров</span>
+				</a>
+				<div class="header__contacts">
+					<div class="header__address">
+						<svg class="header__address-icon">
+							<use xlink:href="img/icons/icons.svg#icon-location"></use>
+						</svg>
+						<div class="header__address-btn">
+							<span>г. Казань, Проспект Ибрагимова, 56А</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-down"></use>
+							</svg>
+						</div>
+						<div class="header__address-dropdown">
+							<div class="header__address-item">
+								г. Казань, Проспект Ибрагимова, 56А
+							</div>
+							<div class="header__address-item">
+								г. Казань, Проспект Ибрагимова, 56А
+							</div>
+						</div>
+					</div>
+					<div class="header__tel-wrapper">
+						<a href="tel:+79177090077" class="header__tel">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+							</svg>
+							<span>+7 (917) 709-00-77</span>
+						</a>
+						<a href="#modal-connect" data-fancybox class="header__order-call">
+							Заказать обратный звонок
+						</a>
+					</div>
+					<div class="header__social">
+						<a href="#" target="_blank" class="header__social-btn">
+							<img src="img/tg.svg" alt="icon" />
+						</a>
+						<a href="#" target="_blank" class="header__social-btn">
+							<img src="img/wh.svg" alt="icon" />
+						</a>
+					</div>
+					<div class="header__burger-btn" id="burger-open">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-burger"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="header-nav">
+		<div class="container">
+			<nav class="header-nav__wrapper">
+				<ul class="list header-nav__list">
+					<li><a href="#s-kitchens" data-anchor>НАШИ КУХНИ</a></li>
+					<li><a href="#s-catalog" data-anchor>СКАЧАТЬ КАТАЛОГ</a></li>
+					<li><a href="#s-offer" data-anchor>Акции</a></li>
+					<li><a href="#s-steps" data-anchor>этапы работы</a></li>
+					<li><a href="#s-reviews" data-anchor>отзывы</a></li>
+					<li><a href="#s-about" data-anchor>О нас</a></li>
+					<li><a href="#s-contacts" data-anchor>Контакты</a></li>
+					<li><a href="#s-get-price" data-anchor>Расчитать стоимость</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="burger-overlay" id="burger-overlay"></div>
+	<div class="burger" id="burger">
+		<div class="burger__head">
+			<a href="/" class="burger__logo">
+				<img src="img/logo.png" alt="logo" />
+			</a>
+			<div class="burger__close" id="burger-close">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-close"></use>
+				</svg>
+			</div>
+		</div>
+		<ul class="list burger__list">
+			<li><a href="#s-kitchens" data-anchor>НАШИ КУХНИ</a></li>
+			<li><a href="#s-catalog" data-anchor>СКАЧАТЬ КАТАЛОГ</a></li>
+			<li><a href="#s-offer" data-anchor>Акции</a></li>
+			<li><a href="#s-steps" data-anchor>этапы работы</a></li>
+			<li><a href="#s-reviews" data-anchor>отзывы</a></li>
+			<li><a href="#s-about" data-anchor>О нас</a></li>
+			<li><a href="#s-contacts" data-anchor>Контакты</a></li>
+			<li><a href="#s-get-price" data-anchor>Расчитать стоимость</a></li>
+		</ul>
+		<div class="burger__contacts">
+			<div data-spollers class="burger__address">
+				<div data-spoller class="burger__address-btn">
+					<svg class="burger__address-icon">
+						<use xlink:href="img/icons/icons.svg#icon-location"></use>
+					</svg>
+					<span>г. Казань, Проспект Ибрагимова, 56А</span>
+					<svg class="burger__address-arrow">
+						<use xlink:href="img/icons/icons.svg#icon-down"></use>
+					</svg>
+				</div>
+				<div>
+					<div class="burger__address-spoller">
+						<div class="burger__address-item">
+							г. Казань, Проспект Ибрагимова, 56А
+						</div>
+						<div class="burger__address-item">
+							г. Казань, Проспект Ибрагимова, 56А
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="tel:+79177090077" class="burger__tel">
+				<svg>
+					<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+				</svg>
+				<span>+7 (917) 709-00-77</span>
+			</a>
+			<a href="#modal-connect" data-fancybox class="burger__order-call">
+				Заказать обратный звонок
+			</a>
+			<div class="burger__social">
+				<a href="#" target="_blank" class="burger__social-btn">
+					<img src="img/tg.svg" alt="icon" />
+				</a>
+				<a href="#" target="_blank" class="burger__social-btn">
+					<img src="img/wh.svg" alt="icon" />
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<main>
+
+		<section class="intro" style="background: url(&quot;img/intro.jpg&quot;) 0 0 / cover no-repeat">
+			<div class="container">
+				<div class="intro__body">
+					<h1 class="intro__title">
+						Изготовление качественных
+						<strong>кухонь на заказ</strong>
+						от производителей INNOVA
+					</h1>
+					<p class="intro__content">
+						Рассчитайте стоимость и срок изготовления кухни на заказ за 2 минуты
+					</p>
+					<a href="#s-get-price" data-anchor class="btn-s intro__btn">
+						Расчитать стоимость кухни
+					</a>
+					<p class="intro__sub-content">
+						Рассчитайте прямо сейчас приблизительную стоимость кухни
+					</p>
+				</div>
+				<div class="intro__adv">
+					<div class="intro__adv-item">
+						<img src="img/intro-adv.svg" alt="icon" class="intro__adv-icon" />
+						<p class="intro__adv-content">
+							<strong>С 2011 года</strong>
+							в производстве кухонных гарнитуров
+						</p>
+					</div>
+					<div class="intro__adv-item">
+						<img src="img/intro-adv.svg" alt="icon" class="intro__adv-icon" />
+						<p class="intro__adv-content">
+							Бесплатный выезд на замер и разработка дизайн-проекта
+						</p>
+					</div>
+					<div class="intro__adv-item">
+						<img src="img/intro-adv.svg" alt="icon" class="intro__adv-icon" />
+						<p class="intro__adv-content">
+							<strong>Более 30</strong>
+							различных фасадов и любой оттенок из палитры
+						</p>
+					</div>
+					<div class="intro__adv-item">
+						<img src="img/intro-adv.svg" alt="icon" class="intro__adv-icon" />
+						<p class="intro__adv-content">
+							Изготавливаем по индивидуальным чертежам и замерам
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-m s-get-price" id="s-get-price">
+			<div class="container">
+				<h2 class="s-title s-get-price__title">
+					Рассчитайте приблизительную стоимость
+				</h2>
+				<p class="s-get-price__head-content">вашей кухни прямо сейчас</p>
+			</div>
+		</section>
+
+		<section class="sect-m s-kitchens" id="s-kitchens">
+			<div class="container tabs">
+				<h2 class="s-title s-kitchens__title">
+					Более 200 уникальных кухонь —
+					<span>каждая из них неповторима.</span>
+				</h2>
+				<p class="s-kitchens__head-content">
+					Мы не просто изготавливаем кухни, мы формируем «место силы» в вашем доме.
+					Ознакомьтесь с нашими новыми проектами.
+				</p>
+				<div class="s-kitchens__nav">
+					<div data-tab-btn="tab-1" class="btn-s _outline s-kitchens__nav-btn _active">
+						Все кухни
+					</div>
+					<div data-tab-btn="tab-2" class="btn-s _outline s-kitchens__nav-btn">
+						Прямые кухни
+					</div>
+					<div data-tab-btn="tab-3" class="btn-s _outline s-kitchens__nav-btn">
+						Угловые кухни
+					</div>
+					<div data-tab-btn="tab-4" class="btn-s _outline s-kitchens__nav-btn">
+						П-образные кухни
+					</div>
+				</div>
+				<div data-tab="tab-1" data-count-show="4" class="container-more _active" style="opacity: 1">
+					<div class="s-kitchens__grid">
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+					</div>
+					<div data-more-btn class="s-kitchens__more-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+						</svg>
+						<span>Показать еще кухонные гарнитуры</span>
+					</div>
+				</div>
+				<div data-tab="tab-2" data-count-show="4" class="container-more">
+					<div class="s-kitchens__grid">
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+					</div>
+					<div data-more-btn class="s-kitchens__more-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+						</svg>
+						<span>Показать еще кухонные гарнитуры</span>
+					</div>
+				</div>
+				<div data-tab="tab-3" data-count-show="4" class="container-more">
+					<div class="s-kitchens__grid">
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+					</div>
+					<div data-more-btn class="s-kitchens__more-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+						</svg>
+						<span>Показать еще кухонные гарнитуры</span>
+					</div>
+				</div>
+				<div data-tab="tab-4" data-count-show="4" class="container-more">
+					<div class="s-kitchens__grid">
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+						<div data-more-item>
+							<div class="s-kitchens__item">
+								<div class="swiper s-kitchens__item-slider">
+									<div class="slider-btn _prev">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+										</svg>
+									</div>
+									<div class="slider-btn _next">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-next"></use>
+										</svg>
+									</div>
+									<div class="swiper-wrapper">
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+										<a href="img/kitchen.jpg" data-fancybox class="swiper-slide s-kitchens__item-slide">
+											<img src="img/kitchen.jpg" alt="image" />
+										</a>
+									</div>
+								</div>
+								<div class="slider-scrollbar"></div>
+								<h5 class="s-kitchens__item-title">Кухня «Квента»</h5>
+								<div class="s-kitchens__item-spec">
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">
+											Габаритные размеры
+										</div>
+										<div class="s-kitchens__item-spec-size">4050 х 2400 мм.</div>
+									</div>
+									<div class="s-kitchens__item-spec-block">
+										<div class="s-kitchens__item-spec-title">Материал</div>
+										<div class="s-kitchens__item-spec-content">
+											шпон, акрил, пластик, МДФ краска, ЛДСП
+										</div>
+									</div>
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-kitchens__item-btn">
+									Узнать стоимость
+								</a>
+							</div>
+						</div>
+					</div>
+					<div data-more-btn class="s-kitchens__more-btn">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+						</svg>
+						<span>Показать еще кухонные гарнитуры</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-method sect-m" id="s-method">
+			<div class="container">
+				<div class="s-method__head">
+					<h2 class="s-title s-method__title">
+						Индивидуальный подход к вашему выбору
+					</h2>
+					<p class="s-method__head-content">
+						Наши дизайнеры ориентированы на оказание профессиональной помощи в
+						процессе выбора, учитывая ваши предпочтения и бюджет, а не на продажу
+						товаров, выгодных для компании.
+					</p>
+				</div>
+				<div class="swiper s-method__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide s-method__slide">
+							<img src="img/method.jpg" alt="image" class="s-method__slide-img" />
+							<span class="s-method__slide-title">
+								В наличии свыше 200 оттенков
+							</span>
+						</div>
+						<div class="swiper-slide s-method__slide">
+							<img src="img/method.jpg" alt="image" class="s-method__slide-img" />
+							<span class="s-method__slide-title">
+								Мы используем МДФ и ЛДСП улучшенного качества
+							</span>
+						</div>
+						<div class="swiper-slide s-method__slide">
+							<img src="img/method.jpg" alt="image" class="s-method__slide-img" />
+							<span class="s-method__slide-title">
+								На фасадах применяется пленка ПВХ или жесткий пластик
+							</span>
+						</div>
+						<div class="swiper-slide s-method__slide">
+							<img src="img/method.jpg" alt="image" class="s-method__slide-img" />
+							<span class="s-method__slide-title">
+								Качественная фурнитура с доводчиками
+							</span>
+						</div>
+						<div class="swiper-slide s-method__slide">
+							<img src="img/method.jpg" alt="image" class="s-method__slide-img" />
+							<span class="s-method__slide-title">
+								С нами вы получите любые кухонные устройства по оптовым ценам
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-catalog sect-p" id="s-catalog">
+			<div class="container">
+				<div class="s-catalog__inside">
+					<h2 class="s-title s-catalog__title">
+						Скачайте каталог с выгодными предложениями по кухонным гарнитурам
+					</h2>
+					<div class="s-catalog__wrapper">
+						<div class="s-catalog__form-wrapper">
+							<p class="s-catalog__form-content">
+								Выберите удобный способ, чтобы получить каталог:
+							</p>
+							<form action="#" class="s-catalog__form">
+								<div class="input-control">
+									<div class="select _outline-white">
+										<input type="text" class="select-input" />
+										<div class="select-btn">
+											<span class="select-title">WhatsApp</span>
+											<svg>
+												<use xlink:href="img/icons/icons.svg#icon-down"></use>
+											</svg>
+										</div>
+										<div class="select-body">
+											<div class="select-item">Telegram</div>
+											<div class="select-item">Viber</div>
+										</div>
+									</div>
+								</div>
+								<div class="input-control">
+									<input type="text" placeholder="Как к вам обращаться?" class="input _outline-white" />
+								</div>
+								<div class="input-control">
+									<input type="tel" placeholder="+7 (999) 999-99-99" class="input _outline-white" />
+								</div>
+								<button class="btn-s s-catalog__form-btn">Получить каталог</button>
+							</form>
+						</div>
+						<img src="img/catalog.png" alt="image" class="s-catalog__img" />
+					</div>
+					<p class="form-policy _white s-catalog__form-policy">
+						Нажимая кнопку «Оставить заявку», я принимаю условия <a href="#" target="_blank">Пользовательского
+							соглашения</a> и даю свое согласие на <a href="#" target="_blank">обработку моих персональных данных</a>,
+						в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О
+						персональных данных»
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-details sect-p" id="s-details">
+			<div class="s-details__bg">
+				<div class="s-details__bg-inside">
+					<img src="img/details.png" alt="image">
+				</div>
+			</div>
+			<div class="container">
+				<h2 class="s-title s-details__title">Проработаем все детали</h2>
+				<p class="s-details__content">и укомплектуем кухню всем необходимым</p>
+				<div class="s-details__wrapper">
+					<div class="s-details__item" style="
+          background: url(&quot;img/details-item.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="s-details__item-body">
+							<div class="s-details__item-num">01</div>
+							<p class="s-details__item-content">Удобные скрытые розетки</p>
+						</div>
+					</div>
+					<div class="s-details__item" style="
+          background: url(&quot;img/details-item.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="s-details__item-body">
+							<div class="s-details__item-num">02</div>
+							<p class="s-details__item-content">Встроим любую технику</p>
+						</div>
+					</div>
+					<div class="s-details__item" style="
+          background: url(&quot;img/details-item.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="s-details__item-body">
+							<div class="s-details__item-num">03</div>
+							<p class="s-details__item-content">
+								Эстетичная сенсорная
+								<br />
+								подсветка
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sect-m s-connect" id="s-connect">
+			<div class="container">
+				<div class="s-connect__head">
+					<h2 class="s-title s-connect__title">Имеется дизайн своей кухни?</h2>
+					<p class="s-connect__head-content">
+						Загрузите фото и описание вашей кухни и получите расчёт стоимости кухни
+					</p>
+				</div>
+				<div class="s-connect__body">
+					<img src="img/connect.jpg" alt="image" class="s-connect__body-bg" />
+					<form action="#" class="s-connect__form">
+						<div class="s-connect__form-grid">
+							<div class="s-connect__form-col">
+								<div class="input-control">
+									<input type="text" placeholder="Как к вам обращаться?" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="tel" placeholder="+7 (999) 999-99-99" class="input" />
+								</div>
+							</div>
+							<div class="s-connect__form-col-descr">
+								<div class="input-control">
+									<textarea placeholder="Описание вашей кухни" class="input"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="s-connect__form-nav">
+							<button class="btn-s s-connect__form-submit">
+								Расчитать стоимость кухни
+							</button>
+							<input type="file" class="input-file" id="connect-file" multiple accept="image/*" />
+							<label for="connect-file" class="label-file s-connect__file-btn">
+								<span>Загрузите фото вашего проекта</span>
+							</label>
+							<div class="s-connect__gallery"></div>
+						</div>
+						<p class="form-policy s-connect__form-policy">
+							Нажимая кнопку «Оставить заявку», я принимаю условия
+							<a href="#" target="_blank">Пользовательского соглашения</a>
+							и даю свое согласие на
+							<a href="#" target="_blank">обработку моих персональных данных</a>
+							, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О
+							персональных данных»
+						</p>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-m s-adv">
+			<div class="container">
+				<h2 class="s-title s-adv__title">
+					Вы экономите до 30%
+					<span>
+						и получаете стоимость без дополнительных наценок, как в мебельных
+						магазинах и у посредников.
+					</span>
+				</h2>
+				<p class="s-adv__head-content">
+					Расчитаем точную стоимость кухни, в которую включено все:
+				</p>
+				<div class="s-adv__grid">
+					<div class="s-adv__item" style="
+          background: url(&quot;img/adv.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="s-adv__item-num">01</div>
+						<p class="s-adv__item-content">
+							Выезд дизайнера и
+							<br />
+							создание 3D-модели
+							<br />
+							вашей кухни.
+						</p>
+					</div>
+					<div class="s-adv__item" style="
+          background: url(&quot;img/adv.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="s-adv__item-num">02</div>
+						<p class="s-adv__item-content">
+							Доставка и подъем на
+							<br />
+							нужный этаж.
+						</p>
+					</div>
+					<div class="s-adv__item" style="
+          background: url(&quot;img/adv.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="s-adv__item-num">03</div>
+						<p class="s-adv__item-content">
+							Установка кухни нашими квалифицированными сборщиками за 10% от общей
+							стоимости.
+						</p>
+					</div>
+					<div class="s-adv__item" style="
+          background: url(&quot;img/adv.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="s-adv__item-num">04</div>
+						<p class="s-adv__item-content">
+							Обслуживание и гарантия на 2 года по контракту.
+						</p>
+					</div>
+					<div class="s-adv__item" style="
+          background: url(&quot;img/adv.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="s-adv__item-num">05</div>
+						<p class="s-adv__item-content">Бесплатные мелкие работы</p>
+					</div>
+					<div class="s-adv__item" style="
+          background: url(&quot;img/adv.jpg&quot;) center / cover no-repeat;
+        ">
+						<div class="s-adv__item-num">06</div>
+						<p class="s-adv__item-content">
+							Вам не придется ни за что
+							<br />
+							доплачивать
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sect-m s-steps" id="s-steps">
+			<div class="container">
+				<h2 class="s-title s-steps__title">Этапы работы</h2>
+				<p class="s-steps__descr">Качественной становки кухонного гарнитура</p>
+				<div class="s-steps__grid">
+					<div class="s-steps__item">
+						<div class="s-steps__item-num">01</div>
+						<h5 class="s-steps__item-title">Замер</h5>
+						<p class="s-steps__item-content">
+							Возможен уже в этот же день, если оставили заявку до обеда.
+							И в выходные дни тоже.
+						</p>
+					</div>
+					<div class="s-steps__item">
+						<div class="s-steps__item-num">02</div>
+						<h5 class="s-steps__item-title">Изготовление</h5>
+						<p class="s-steps__item-content">
+							От 20 дней, зависит от объема и сложности заказа. Логистика и поставки
+							материала отлажены как швейцарские часы
+						</p>
+					</div>
+					<div class="s-steps__item">
+						<div class="s-steps__item-num">03</div>
+						<h5 class="s-steps__item-title">Доставка и установка</h5>
+						<p class="s-steps__item-content">
+							В день изготовления на собственном транспорте. Убираем помещения
+							от пыли и мусора после монтажа. Установку контролирует руководитель
+							отдела сборки
+						</p>
+					</div>
+					<div class="s-steps__item">
+						<div class="s-steps__item-num">04</div>
+						<h5 class="s-steps__item-title">Сервисное обслуживание</h5>
+						<p class="s-steps__item-content">
+							В течение 2 лет после установки. Гарантия распространяется и на кухню,
+							и на монтаж. У нас все официально по договору
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-offer sect-m" id="s-offer">
+			<div class="container">
+				<h2 class="s-title s-offer__title">Специальные предложения</h2>
+				<p class="s-offer__descr">Воспользуйтесь акцией при заказе кухонного гарнитура</p>
+				<div class="swiper s-offer__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide s-offer__slide">
+							<div class="s-offer__slide-gallery" style="
+              background: url(&quot;img/offer.jpg&quot;) center / cover
+                no-repeat;
+            ">
+								<div class="s-offer__gallery-title">
+									Дарим 30 000 на покупку кухни!
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-offer__gallery-btn">
+									Оставить заявку
+								</a>
+							</div>
+							<h5 class="s-offer__slide-title">Дарим 30 000 на покупку кухни!</h5>
+						</div>
+						<div class="swiper-slide s-offer__slide">
+							<div class="s-offer__slide-gallery" style="
+              background: url(&quot;img/offer.jpg&quot;) center / cover
+                no-repeat;
+            ">
+								<div class="s-offer__gallery-title">
+									Дарим 30 000 на покупку кухни!
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-offer__gallery-btn">
+									Оставить заявку
+								</a>
+							</div>
+							<h5 class="s-offer__slide-title">Дарим 30 000 на покупку кухни!</h5>
+						</div>
+						<div class="swiper-slide s-offer__slide">
+							<div class="s-offer__slide-gallery" style="
+              background: url(&quot;img/offer.jpg&quot;) center / cover
+                no-repeat;
+            ">
+								<div class="s-offer__gallery-title">
+									Дарим 30 000 на покупку кухни!
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-offer__gallery-btn">
+									Оставить заявку
+								</a>
+							</div>
+							<h5 class="s-offer__slide-title">Дарим 30 000 на покупку кухни!</h5>
+						</div>
+						<div class="swiper-slide s-offer__slide">
+							<div class="s-offer__slide-gallery" style="
+              background: url(&quot;img/offer.jpg&quot;) center / cover
+                no-repeat;
+            ">
+								<div class="s-offer__gallery-title">
+									Дарим 30 000 на покупку кухни!
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-offer__gallery-btn">
+									Оставить заявку
+								</a>
+							</div>
+							<h5 class="s-offer__slide-title">Дарим 30 000 на покупку кухни!</h5>
+						</div>
+						<div class="swiper-slide s-offer__slide">
+							<div class="s-offer__slide-gallery" style="
+              background: url(&quot;img/offer.jpg&quot;) center / cover
+                no-repeat;
+            ">
+								<div class="s-offer__gallery-title">
+									Дарим 30 000 на покупку кухни!
+								</div>
+								<a href="#modal-connect" data-fancybox class="btn-s s-offer__gallery-btn">
+									Оставить заявку
+								</a>
+							</div>
+							<h5 class="s-offer__slide-title">Дарим 30 000 на покупку кухни!</h5>
+						</div>
+					</div>
+				</div>
+				<div class="slider-scrollbar s-offer__slider-scrollbar"></div>
+			</div>
+		</section>
+
+		<section class="s-report" id="s-report">
+			<div class="container">
+				<div class="s-report__body">
+					<div class="s-report__head">
+						<h2 class="s-title s-report__title">
+							Отчет сборщиков INNOVA о выполнении монтажа кухонного гарнитура.
+						</h2>
+						<div class="s-report__slider-nav">
+							<div class="slider-btn _prev _primary">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+								</svg>
+							</div>
+							<div class="slider-btn _next _primary">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-next"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="swiper s-report__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide s-report__slide">
+								<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox class="s-report__slide-gallery" style="
+                background: url(&quot;img/report.jpg&quot;) center / cover
+                  no-repeat;
+              ">
+									<div class="s-report__slide-play">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-play"></use>
+										</svg>
+									</div>
+								</a>
+								<div class="s-report__slide-date">25 августа 2025 г.</div>
+							</div>
+							<div class="swiper-slide s-report__slide">
+								<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox class="s-report__slide-gallery" style="
+                background: url(&quot;img/report.jpg&quot;) center / cover
+                  no-repeat;
+              ">
+									<div class="s-report__slide-play">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-play"></use>
+										</svg>
+									</div>
+								</a>
+								<div class="s-report__slide-date">25 августа 2025 г.</div>
+							</div>
+							<div class="swiper-slide s-report__slide">
+								<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox class="s-report__slide-gallery" style="
+                background: url(&quot;img/report.jpg&quot;) center / cover
+                  no-repeat;
+              ">
+									<div class="s-report__slide-play">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-play"></use>
+										</svg>
+									</div>
+								</a>
+								<div class="s-report__slide-date">25 августа 2025 г.</div>
+							</div>
+							<div class="swiper-slide s-report__slide">
+								<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox class="s-report__slide-gallery" style="
+                background: url(&quot;img/report.jpg&quot;) center / cover
+                  no-repeat;
+              ">
+									<div class="s-report__slide-play">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-play"></use>
+										</svg>
+									</div>
+								</a>
+								<div class="s-report__slide-date">25 августа 2025 г.</div>
+							</div>
+							<div class="swiper-slide s-report__slide">
+								<a href="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true" data-fancybox class="s-report__slide-gallery" style="
+                background: url(&quot;img/report.jpg&quot;) center / cover
+                  no-repeat;
+              ">
+									<div class="s-report__slide-play">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#icon-play"></use>
+										</svg>
+									</div>
+								</a>
+								<div class="s-report__slide-date">25 августа 2025 г.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-reviews sect-m">
+			<div class="container tabs">
+				<h2 class="s-title s-reviews__title">Отзывы наших клиентов</h2>
+				<p class="s-reviews__descr">
+					О полученном результате и нашем подходе к работе
+				</p>
+				<div class="s-reviews__nav">
+					<div data-tab-btn="tab-1" class="btn-s s-reviews__nav-btn _outline _active">
+						Отзывы
+					</div>
+					<div data-tab-btn="tab-2" class="btn-s s-reviews__nav-btn _outline">
+						Отзывы Яндекса
+					</div>
+				</div>
+				<div data-tab="tab-1" class="_active" style="opacity: 1">
+					<div class="s-reviews__slider-wrapper">
+						<div class="slider-btn _prev _primary">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+							</svg>
+						</div>
+						<div class="swiper s-reviews__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide s-reviews__slide">
+									<img src="img/reviews.jpg" alt="image" class="s-reviews__slide-img" />
+									<a href="img/reviews-content.jpg" data-fancybox class="s-reviews__slide-content">
+										<img src="img/reviews-content.jpg" alt="image" class="s-reviews__slide-img-content" />
+									</a>
+								</div>
+								<div class="swiper-slide s-reviews__slide">
+									<img src="img/reviews.jpg" alt="image" class="s-reviews__slide-img" />
+									<a href="img/reviews-content.jpg" data-fancybox class="s-reviews__slide-content">
+										<img src="img/reviews-content.jpg" alt="image" class="s-reviews__slide-img-content" />
+									</a>
+								</div>
+								<div class="swiper-slide s-reviews__slide">
+									<img src="img/reviews.jpg" alt="image" class="s-reviews__slide-img" />
+									<a href="img/reviews-content.jpg" data-fancybox class="s-reviews__slide-content">
+										<img src="img/reviews-content.jpg" alt="image" class="s-reviews__slide-img-content" />
+									</a>
+								</div>
+								<div class="swiper-slide s-reviews__slide">
+									<img src="img/reviews.jpg" alt="image" class="s-reviews__slide-img" />
+									<a href="img/reviews-content.jpg" data-fancybox class="s-reviews__slide-content">
+										<img src="img/reviews-content.jpg" alt="image" class="s-reviews__slide-img-content" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider-btn _next _primary">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-next"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="slider-scrollbar s-reviews__slider-scrollbar"></div>
+				</div>
+				<div data-tab="tab-2">
+					<div class="s-reviews__slider-wrapper">
+						<div class="slider-btn _prev _primary">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-prev"></use>
+							</svg>
+						</div>
+						<div class="swiper s-reviews__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide s-reviews__slide">
+									<img src="img/reviews.jpg" alt="image" class="s-reviews__slide-img" />
+									<a href="img/reviews-content.jpg" data-fancybox class="s-reviews__slide-content">
+										<img src="img/reviews-content.jpg" alt="image" class="s-reviews__slide-img-content" />
+									</a>
+								</div>
+								<div class="swiper-slide s-reviews__slide">
+									<img src="img/reviews.jpg" alt="image" class="s-reviews__slide-img" />
+									<a href="img/reviews-content.jpg" data-fancybox class="s-reviews__slide-content">
+										<img src="img/reviews-content.jpg" alt="image" class="s-reviews__slide-img-content" />
+									</a>
+								</div>
+								<div class="swiper-slide s-reviews__slide">
+									<img src="img/reviews.jpg" alt="image" class="s-reviews__slide-img" />
+									<a href="img/reviews-content.jpg" data-fancybox class="s-reviews__slide-content">
+										<img src="img/reviews-content.jpg" alt="image" class="s-reviews__slide-img-content" />
+									</a>
+								</div>
+								<div class="swiper-slide s-reviews__slide">
+									<img src="img/reviews.jpg" alt="image" class="s-reviews__slide-img" />
+									<a href="img/reviews-content.jpg" data-fancybox class="s-reviews__slide-content">
+										<img src="img/reviews-content.jpg" alt="image" class="s-reviews__slide-img-content" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider-btn _next _primary">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-next"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="slider-scrollbar s-reviews__slider-scrollbar"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-faq sect-m" id="s-faq">
+			<div class="container">
+				<h2 class="s-title s-faq__title">Нам часто задают вопросы</h2>
+				<div data-spollers class="s-faq__grid">
+					<div class="s-faq__spoller">
+						<div data-spoller class="s-faq__spoller-btn">
+							<span>Работаете ли вы по договору?</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+							</svg>
+						</div>
+						<div>
+							<div class="content s-faq__spoller-body">
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Necessitatibus nobis suscipit molestias porro, mollitia quia
+									minima et praesentium possimus veniam?
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Necessitatibus nobis suscipit molestias porro, mollitia quia
+									minima et praesentium possimus veniam?
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="s-faq__spoller">
+						<div data-spoller class="s-faq__spoller-btn">
+							<span>Работаете ли вы по договору?</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+							</svg>
+						</div>
+						<div>
+							<div class="content s-faq__spoller-body">
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Necessitatibus nobis suscipit molestias porro, mollitia quia
+									minima et praesentium possimus veniam?
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Necessitatibus nobis suscipit molestias porro, mollitia quia
+									minima et praesentium possimus veniam?
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="s-faq__spoller">
+						<div data-spoller class="s-faq__spoller-btn">
+							<span>Работаете ли вы по договору?</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+							</svg>
+						</div>
+						<div>
+							<div class="content s-faq__spoller-body">
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Necessitatibus nobis suscipit molestias porro, mollitia quia
+									minima et praesentium possimus veniam?
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Necessitatibus nobis suscipit molestias porro, mollitia quia
+									minima et praesentium possimus veniam?
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="s-faq__spoller">
+						<div data-spoller class="s-faq__spoller-btn">
+							<span>Работаете ли вы по договору?</span>
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-plus"></use>
+							</svg>
+						</div>
+						<div>
+							<div class="content s-faq__spoller-body">
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Necessitatibus nobis suscipit molestias porro, mollitia quia
+									minima et praesentium possimus veniam?
+								</p>
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Necessitatibus nobis suscipit molestias porro, mollitia quia
+									minima et praesentium possimus veniam?
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="s-order" id="s-order" style="background: url('img/order.jpg') center / cover no-repeat;">
+			<div class="container">
+				<div class="s-order__wrapper">
+					<div class="s-order__info">
+						<h2 class="s-title s-order__title">Оставьте заявку</h2>
+						<p class="s-order__descr">
+							Мы обязательно свяжемся с вами уточним размеры, ваши пожелания по материалам и фурнитуре и сделаем расчет!
+						</p>
+						<img src="img/arrow.png" alt="arrow" class="s-order__arrow">
+					</div>
+					<div class="s-order__form-wrapper">
+						<form action="#" class="s-order__form">
+							<div class="input-control">
+								<input type="text" placeholder="Как к вам обращаться?" class="input">
+							</div>
+							<div class="input-control">
+								<input type="tel" placeholder="+7 (999) 999-99-99" class="input">
+							</div>
+							<button class="btn-s s-order__form-btn">Расчитать стоимость кухни</button>
+						</form>
+						<p class="form-policy">Нажимая кнопку «Оставить заявку», я принимаю условия <a href="#" target="_blank">Пользовательского соглашения</a> и даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s-contacts sect-m" id="s-contacts">
+			<div class="container">
+				<div class="s-contacts__wrapper">
+					<div class="s-contacts__info">
+						<h2 class="s-contacts__title">Наши контакты</h2>
+						<div class="s-contacts__grid">
+							<a href="tel:+79177090077" class="s-contacts__tel">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-tel-fill"></use>
+								</svg>
+								<span>+7 (917) 709-00-77</span>
+							</a>
+							<a href="mailto:innova@in-kuh.ru" class="s-contacts__mail">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+								</svg>
+								<span>innova@in-kuh.ru</span>
+							</a>
+							<div class="s-contacts__address">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-location"></use>
+								</svg>
+								<div>
+									<div class="s-contacts__address-title">
+										Мы находимся по адресу:
+									</div>
+									<div class="s-contacts__address-content">
+										г. Казань, Проспект Ибрагимова, 56А
+										<br />
+										г. Зеленодольск, ул. Столичная, 62
+									</div>
+								</div>
+							</div>
+							<a href="#modal-connect" data-fancybox class="btn-s s-contacts__order-btn">Оставить заявку</a>
+						</div>
+						<div class="s-contacts__gallery">
+							<h3 class="s-contacts__title">Наш салон</h3>
+							<div class="s-contacts__gallery-grid">
+								<a href="img/contacts-gallery.jpg" data-fancybox="contacts-gallery" class="s-contacts__gallery-item">
+									<img src="img/contacts-gallery.jpg" alt="image">
+								</a>
+								<a href="img/contacts-gallery.jpg" data-fancybox="contacts-gallery" class="s-contacts__gallery-item">
+									<img src="img/contacts-gallery.jpg" alt="image">
+								</a>
+								<a href="img/contacts-gallery.jpg" data-fancybox="contacts-gallery" class="s-contacts__gallery-item">
+									<img src="img/contacts-gallery.jpg" alt="image">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="s-contacts__map-wrapper">
+						<h2 class="s-contacts__title">Адреса офиса</h2>
+						<div class="s-contacts__map" data-zoom="17" data-center="[55.8206170689049,49.09551749999995]" id="map"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<div class="modal" id="modal-connect">
+		<div class="modal__close" data-fancybox-close>
+			<svg>
+				<use xlink:href="img/icons/icons.svg#icon-close"></use>
+			</svg>
+		</div>
+		<h3 class="s-title modal__title">Оставьте заявку</h3>
+		<p class="modal__content">
+			Мы свяжемся с вами для расчёта
+			<br />
+			стоимости кухонного гарнитура
+		</p>
+		<div class="modal__form-wrapper">
+			<form action="#" class="modal__form">
+				<div class="input-control">
+					<input type="text" placeholder="Как к вам обращаться?" class="input" />
+				</div>
+				<div class="input-control">
+					<input type="tel" placeholder="+7 (999) 999-99-99" class="input" />
+				</div>
+				<button class="btn-s modal__form-btn">Оставить заявку</button>
+			</form>
+			<p class="form-policy">
+				Нажимая кнопку «Оставить заявку», я принимаю условия
+				<a href="#" target="_blank">Пользовательского соглашения</a>
+				и даю свое согласие на обработку моих персональных данных , в соответствии
+				с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»
+			</p>
+		</div>
+	</div>
+
+	<div class="modal-catalog" id="modal-catalog">
+		<div data-fancybox-close class="modal-catalog__close">
+			<svg>
+				<use xlink:href="img/icons/icons.svg#icon-close"></use>
+			</svg>
+		</div>
+		<h3 class="s-title modal-catalog__title">
+			Получите каталог кухонь 2025 года
+		</h3>
+		<p class="modal-catalog__content">
+			Выберите удобный способ, чтобы получить каталог:
+		</p>
+		<form action="#" class="modal-catalog__form">
+			<div class="input-control">
+				<div class="select _outline-white">
+					<input type="text" class="select-input" />
+					<div class="select-btn">
+						<span class="select-title">WhatsApp</span>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#icon-down"></use>
+						</svg>
+					</div>
+					<div class="select-body">
+						<div class="select-item">Telegram</div>
+						<div class="select-item">Viber</div>
+					</div>
+				</div>
+			</div>
+			<div class="input-control">
+				<input type="text" placeholder="Как к вам обращаться?" class="input _outline-white" />
+			</div>
+			<div class="input-control">
+				<input type="tel" placeholder="+7 (999) 999-99-99" class="input _outline-white" />
+			</div>
+			<button class="btn-s modal-catalog__form-btn">Получить каталог</button>
+		</form>
+		<p class="form-policy _white modal-catalog__form-policy">
+			Нажимая кнопку «Оставить заявку», я принимаю условия
+			<a href="#" target="_blank">Пользовательского соглашения</a>
+			и даю свое согласие на обработку моих персональных данных , в соответствии с
+			Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных»
+		</p>
+		<img src="img/modal-catalog-image.png" alt="image" class="modal-catalog__img">
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__main">
+					<a href="#" class="footer__logo">
+						<img src="img/logo.png" alt="logo" />
+					</a>
+					<div class="footer__copyright">© 2025 INNOVA</div>
+					<p class="footer__main-content">
+						Все права защищены.
+						<br />
+						Копирование материалов с
+						<br />
+						разрешения администрации.
+					</p>
+				</div>
+				<div class="footer__nav">
+					<div class="footer__nav-item">
+						<ul class="list footer__nav-list">
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Наши кухни</a></li>
+							<li><a href="#">Этапы работы</a></li>
+							<li><a href="#">Скачать каталог</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-item">
+						<ul class="list footer__nav-list">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Расчитать стоимость</a></li>
+						</ul>
+					</div>
+					<div class="footer__nav-item">
+						<a href="tel:+79177090077" class="footer__tel">+7 (917) 709-00-77</a>
+						<div data-spollers class="footer__addresses">
+							<div data-spoller class="footer__address-btn">
+								<span>г. Казань, Проспект Ибрагимова, 56А</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#icon-down"></use>
+								</svg>
+							</div>
+							<div>
+								<div class="footer__addresses-body">
+									<div class="footer__address-item">
+										г. Казань, Проспект Ибрагимова, 56А
+									</div>
+									<div class="footer__address-item">
+										г. Казань, Проспект Ибрагимова, 56А
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__work-time">Пн-Вс: с 9:00 до 21:00</div>
+						<a href="mailto:innova@in-kuh.ru" class="footer__mail">innova@in-kuh.ru</a>
+					</div>
+				</div>
+				<div class="footer__buttons">
+					<a href="#modal-connect" data-fancybox class="btn-s footer__nav-btn">Заказать звонок</a>
+					<div class="footer__social">
+						<a href="#" target="_blank" class="footer__social-btn">
+							<img src="img/tg.svg" alt="icon">
+						</a>
+						<a href="#" target="_blank" class="footer__social-btn">
+							<img src="img/wh.svg" alt="icon">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<ul class="list footer__bottom-list">
+					<li><a href="#" target="_blank">Политика обработки персональных данных</a></li>
+				</ul>
+				<a href="https://qorix.ru/" target="_blank" class="footer__dev">
+					<span>Разработка сайта –</span>
+					<img src="img/qorix.svg" alt="icon">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./files/fancybox/fancybox.min.js?_v=20250904232548"></script>
+	<script src="./files/swiper/swiper.min.js?_v=20250904232548"></script>
+	<script src="./files/inputmask/inputmask.min.js?_v=20250904232548"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=b46e9249-4925-4460-b11c-3aaf76ad0115&lang=ru_RU&_v=20250904232548" type="text/javascript"></script>
+	<script src="js/app.min.js?_v=20250904232548"></script>
+</body>
+
+</html>
