@@ -19,3 +19,14 @@
     padding: 60px 0px;
   }
 }
+
+.content {
+  font-size: 16px;
+  line-height: 130%;
+  p {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}

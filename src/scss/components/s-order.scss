@@ -1,0 +1,104 @@
+.s-order {
+  position: relative;
+  padding: 65px 0px;
+  color: white;
+  z-index: 1;
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.6) 16.49%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+    z-index: -1;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 75px;
+    @include laptop-min {
+      gap: 30px;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+  &__info {
+    position: relative;
+    flex: 0 1 570px;
+    z-index: 1;
+    @include tablet {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__title {
+    margin: 0px 0px 45px 0px;
+    @include laptop-min {
+      margin-bottom: 30px;
+    }
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &__descr {
+    margin: 0;
+    font-size: 32px;
+    @include laptop-min {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    bottom: -215px;
+    right: -30px;
+    @include laptop-min {
+      right: 0;
+      width: 160px;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  &__form-wrapper {
+    border-radius: 5px;
+    background-color: white;
+    width: 460px;
+    flex-shrink: 0;
+    padding: 50px 30px 40px 30px;
+    @include laptop-min {
+      width: 390px;
+      padding: 30px 20px;
+    }
+    @include tablet {
+      width: 500px;
+      max-width: 100%;
+    }
+
+    .form-policy {
+      margin-top: 20px;
+      font-size: 14px;
+      @include tablet {
+        font-size: 12px;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include tablet {
+      gap: 20px;
+    }
+  }
+  &__form-btn {
+    width: 100%;
+  }
+}
